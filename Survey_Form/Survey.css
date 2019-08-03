@@ -1,0 +1,40 @@
+body{
+  background-color: grey;
+
+}
+#description {
+  font-size: 25px;
+  padding-top: 15px;
+}
+.con{
+  background-color: white;
+}
+#title{
+  color: white;
+  text-align: center;
+  margin-top: 19px;
+  font-family: TimesNewRoman;
+  font-style: normal ;
+}
+#email{
+  padding-left: 12px;
+}
+.con{
+  background-color: #c1c2c3;
+
+}
+#optional{
+  padding-left: 500px;
+}
+label{
+  font-family: 'Oxygen', sans-serif;
+}
+#submit{
+  align: center;
+  margin-left: 500px;
+}
+#submit1{
+  margin-top: 50px;
+  margin-left: 475px;
+  margin-bottom: 10px;
+}

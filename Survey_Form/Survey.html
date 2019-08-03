@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Survey.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 class="h1" id="title">Survey Form</h1>
+    <div class="container con">
+       <p id="description" style="text-align:center">Let us know how we can improve freeCodeCamp</p>
+        <hr>
+        <h1>Personal Details:</h1>
+        <hr class="hr">
+        <form id="survey-form" action="index.html" method="post">
+          <div class="form-group">
+            <label id="name-label" > Name :</label>
+            <input type="name" id="name" class="form-control" placeholder="Enter firstname" required>
+            <!-- <small class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+          </div>
+          <div class="form-group" >
+            <label id="email-label" >Email:</label>
+            <input  id="email" type="email" class="form-control" placeholder="Enter the email" required>
+          </div>
+          <div class="form-group">
+            <label id="number-label" >Age:</label>
+            <input  id="number" type="number" class="form-control" min="10" max="100" placeholder="Enter your age " required>
+          </div>
+
+          <div id="dropdown" class="dropdown">
+          <p>
+             <label>Which option best describes your current role?</label>
+             <select id = "myList">
+               <option value = "Student">Student</option>
+               <option value = "Teacher">Teacher</option>
+               <option value = "freeCodeCamper">freeCodeCamper</option>
+               <option value = "Freelancer">Freelancer</option>
+             </select>
+          </p>
+
+          </div>
+          <hr>
+          <h1>Feed-Back</h1>
+          <hr>
+          <form >
+
+          <fieldset>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                      <label for="">How likely is that you would recommend freeCodeCamp to a friend?</label>
+                    </div>
+                    <div class="col-md-6">
+                      <input type = "radio" name = "views"  value = "1" />&nbsp;&nbsp;<label for="">&nbsp;Definitely</label><br>
+                      <input type = "radio" name = "views"  value = "2" />&nbsp;&nbsp;<label for="">&nbsp;NotSure</label><br>
+                      <input type = "radio" name = "views"  value = "3" />&nbsp;&nbsp;<label for="">&nbsp;Maybe</label><br>
+                    </div>
+                </div>
+            </div>
+          </fieldset>
+
+          <br>
+          <fieldset>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                      <label for="">Things that should be improved in the future-> (Check all that apply):</label>
+                    </div>
+                    <div class="col-md-6">
+                      <input type = "checkbox" name="imp1" value = "Front-End Project" />&nbsp;&nbsp;<label for="">&nbsp;Front-End Project</label><br>
+                      <input type = "checkbox" name="imp1" value = "Back-End Project" />&nbsp;&nbsp;<label for="">&nbsp;Back-End Project</label><br>
+                      <input type = "checkbox" name="imp1" value = "Data-Visualistion" />&nbsp;&nbsp;<label for="">&nbsp;Data-Visualistion</label><br>
+                    </div>
+                </div>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="comment">Any Suggestions:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+
+
+
+          <div class="form-check" id="submit1">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+    </div>
+
+  </body>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
